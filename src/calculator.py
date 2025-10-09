@@ -5,6 +5,7 @@ Students will extend this with more functions
 
 import math
 
+
 def add(a, b):
     """Add two numbers together"""
     return a + b
@@ -29,7 +30,7 @@ def divide(a, b):
 
 def power(a, b):
     """Raise a to the power of b"""
-    return a ** b
+    return a**b
 
 
 def square_root(a):
