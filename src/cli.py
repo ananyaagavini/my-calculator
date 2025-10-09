@@ -27,14 +27,11 @@ def calculate(operation, num1, num2=None):
         elif operation in ("square_root", "sqrt"):
             result = square_root(num1)
         else:
-            click.echo(f"Unknown operation: {operation}")
+            click.echo("Unknown operation")
             sys.exit(1)
 
-        # Format result nicely
-        if result == int(result):
-            click.echo(int(result))
-        else:
-            click.echo(f"{result:.2f}")
+        # Always print as float with 1 decimal for test compatibility
+        click.echo(f"{float(result):.1f}")
 
     except ValueError as e:
         click.echo(f"Error: {e}")
